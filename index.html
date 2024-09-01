@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Solar Explorer</title>
+</head>
+<body>
+  <h1 class='logo'>
+    Solar Explorer Sayyed Arslaan 
+    <span>Only Allah is the Creator</span>
+  </h1>
+  
+  <!-- Planet Radio Buttons and Labels -->
+  <input class='planet9' id='pluto' type='radio' name='planet'>
+  <label class='menu pluto' for='pluto'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Pluto
+      </h2>
+      <h3>39.5 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet8' id='neptune' type='radio' name='planet'>
+  <label class='menu neptune' for='neptune'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Neptune
+      </h2>
+      <h3>30.06 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet7' id='uranus' type='radio' name='planet'>
+  <label class='menu uranus' for='uranus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Uranus
+      </h2>
+      <h3>19.18 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet6' id='saturn' type='radio' name='planet'>
+  <label class='menu saturn' for='saturn'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Saturn
+      </h2>
+      <h3>9.539 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet5' id='jupiter' type='radio' name='planet'>
+  <label class='menu jupiter' for='jupiter'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Jupiter
+      </h2>
+      <h3>5.203 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet4' id='mars' type='radio' name='planet' checked='checked'>
+  <label class='menu mars' for='mars'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mars
+      </h2>
+      <h3>1.524 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet3' id='earth' type='radio' name='planet' checked='checked'>
+  <label class='menu earth' for='earth'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Earth
+      </h2>
+      <h3>1 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet2' id='venus' type='radio' name='planet' checked='checked'>
+  <label class='menu venus' for='venus'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Venus
+      </h2>
+      <h3>0.723 AU</h3>
+    </div>
+  </label>
+  
+  <input class='planet1' id='mercury' type='radio' name='planet' checked='checked'>
+  <label class='menu mercury' for='mercury'>
+    <div class='preview'></div>
+    <div class='info'>
+      <h2>
+        <div class='pip'></div>
+        Mercury
+      </h2>
+      <h3>0.39 AU</h3>
+    </div>
+  </label>
+  
+  <!-- Solar System Display -->
+  <div class='solar'>
+    <div class='solar_systm'>
+      <div class='mercury planet'>
+        <div class='mercury planet_description'>
+          <h2>Planet</h2>
+          <h1>Mercury</h1>
+          <p>The closest planet to the sun. It circles the sun faster than all the other planets, which is why Romans named it after their swift-footed messenger god.</p>
+          <label for='readMercury'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='venus planet'>
+        <div class='planet_description venus'>
+          <h2>Planet</h2>
+          <h1>Venus</h1>
+          <p>Named for the Roman goddess of love and beauty. In ancient times, Venus was often thought to be two different stars, the evening star and the morning star.</p>
+          <label for='readVenus'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='earth planet'>
+        <div class='moon moon'>
+          <h3>Moon</h3>
+          <h2>Moon</h2>
+        </div>
+        <div class='m trajectory'></div>
+        <div class='earth planet_description'>
+          <h2>Planet</h2>
+          <h1>Earth</h1>
+          <p>Earth, our home. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life.</p>
+          <label for='readEarth'> 
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='mars planet'>
+        <div class='deimos moon'>
+          <h3>Moon</h3>
+          <h2>Deimos</h2>
+        </div>
+        <div class='d trajectory'></div>
+        <div class='moon phoebos'>
+          <h3>Moon</h3>
+          <h2>Phoebos</h2>
+        </div>
+        <div class='p trajectory'></div>
+        <div class='mars planet_description'>
+          <h2>Planet</h2>
+          <h1>Mars</h1>
+          <p>Fourth planet from the Sun and the second smallest planet in the solar system. Named after the Roman god of war often described as the “Red Planet”.</p>
+          <label for='readMars'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='jupiter planet'>
+        <div class='lo moon'>
+          <h3>Moon</h3>
+          <h2>Io</h2>
+        </div>
+        <div class='europa moon'>
+          <h3>Moon</h3>
+          <h2>Europa</h2>
+        </div>
+        <div class='ganymede moon'>
+          <h3>Moon</h3>
+          <h2>Ganymede</h2>
+        </div>
+        <div class='lop trajectory'></div>
+        <div class='eu trajectory'></div>
+        <div class='ga trajectory'></div>
+        <div class='jupiter planet_description'>
+          <h2>Planet</h2>
+          <h1>Jupiter</h1>
+          <p>Jupiter is the largest planet in the solar system. Fittingly, it was named after the king of the gods in Roman mythology.</p>
+          <label for='readJupiter'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='saturn planet'>
+        <div class='moon titan'>
+          <h3>Moon</h3>
+          <h2>Titan</h2>
+        </div>
+        <div class='t trajectory'></div>
+        <div class='saturn planet_description'>
+          <h2>Planet</h2>
+          <h1>Saturn</h1>
+          <p>Saturn is the second largest planet in the solar system. Its distinctive ring system is made up of seven rings with gaps and divisions between them.</p>
+          <label for='readSaturn'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='uranus planet'>
+        <div class='uranus planet_description'>
+          <h2>Planet</h2>
+          <h1>Uranus</h1>
+          <p>Uranus has the third largest diameter in our solar system. Uranus was named after the Greek sky deity Ouranos, the earliest of the lords of the heavens.</p>
+          <label for='readUranus'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='neptune planet'>
+        <div class='neptune planet_description'>
+          <h2>Planet</h2>
+          <h1>Neptune</h1>
+          <p>Neptune is the only planet in our solar system not visible to the naked eye and the first predicted by mathematics before its discovery.</p>
+          <label for='readNeptune'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+    
+    <div class='solar_systm'>
+      <div class='pluto planet'>
+        <div class='pluto planet_description'>
+          <h2>Planet</h2>
+          <h1>Pluto</h1>
+          <p>Once the ninth planet from the sun, Pluto is unlike other planets in many respects. It’s the largest known dwarf planet in the solar system.</p>
+          <label for='readPluto'>
+            <a>
+              Read Mor
+              <span>e</span>
+            </a>
+          </label>
+        </div>
+        <div class='overlay'></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Panels for Additional Information -->
+  <input id='readMercury' type='radio' name='panel'>
+  <div class='panel mercury'>
+    <label for='close'>x</label>
+    <p>
+      Mercury is the smallest planet in our solar system—only slightly larger than Earth's Moon. Mercury is the closest planet to the Sun, but it's actually not the hottest. Venus is hotter.
+    </p>
+  </div>
+  
+  <input id='readVenus' type='radio' name='panel'>
+  <div class='panel venus'>
+    <label for='close'>x</label>
+    <p>
+      Venus spins slowly in the opposite direction of most planets. Its thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system.
+    </p>
+  </div>
+  
+  <input id='readEarth' type='radio' name='panel'>
+  <div class='panel earth'>
+    <label for='close'>x</label>
+    <p>
+      Earth is the only planet in our solar system known to harbor life. Earth has a very hospitable temperature and mix of chemicals that have made life abundant here.
+    </p>
+  </div>
+  
+  <input id='readMars' type='radio' name='panel'>
+  <div class='panel mars'>
+    <label for='close'>x</label>
+    <p>
+      Mars is a cold desert world. It is half the size of Earth, and it’s often referred to as the "Red Planet" because of its reddish appearance. Mars is a dusty, cold, desert world with a very thin atmosphere.
+    </p>
+  </div>
+  
+  <input id='readJupiter' type='radio' name='panel'>
+  <div class='panel jupiter'>
+    <label for='close'>x</label>
+    <p>
+      Jupiter is more than twice as massive as all the other planets in our solar system combined. Its familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium.
+    </p>
+  </div>
+  
+  <input id='readSaturn' type='radio' name='panel'>
+  <div class='panel saturn'>
+    <label for='close'>x</label>
+    <p>
+      Saturn is unique among the planets. It has the most spectacular ring system, with seven rings and several gaps and divisions between them.
+    </p>
+  </div>
+  
+  <input id='readUranus' type='radio' name='panel'>
+  <div class='panel uranus'>
+    <label for='close'>x</label>
+    <p>
+      Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.
+    </p>
+  </div>
+  
+  <input id='readNeptune' type='radio' name='panel'>
+  <div class='panel neptune'>
+    <label for='close'>x</label>
+    <p>
+      Neptune is the eighth and farthest-known planet from the Sun in the Solar System. It is 17 times the mass of Earth, slightly more massive than its near-twin Uranus.
+    </p>
+  </div>
+  
+  <input id='readPluto' type='radio' name='panel'>
+  <div class='panel pluto'>
+    <label for='close'>x</label>
+    <p>
+      Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune. It was the first Kuiper belt object to be discovered and is the largest known plutoid (or ice dwarf).
+    </p>
+  </div>
+  
+  <!-- Close Button -->
+  <input id='close' type='radio' name='panel'>
+  
+</body>
+</html>
